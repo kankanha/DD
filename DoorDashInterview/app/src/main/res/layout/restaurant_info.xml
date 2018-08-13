@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantInfo">
+
+    <ImageView
+        android:id="@+id/imgRestVw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/img_top_padding"/>
+
+    <TextView
+        android:id="@+id/txtOpenClosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_subtitle"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:paddingTop="@dimen/text_title_top_padding"
+        android:layout_below="@id/imgRestVw"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtTileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/black"
+        android:paddingTop="@dimen/text_title"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:layout_below="@id/txtOpenClosed"
+        />
+
+    <TextView
+        android:id="@+id/txtGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtTileName"
+        android:paddingTop="@dimen/text_subtitle_top_padding"
+        android:paddingLeft="@dimen/text_title_left_padding"/>
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtOpenClosed"
+        android:paddingRight="@dimen/text_status_right_padding"
+        android:paddingTop="@dimen/text_title_top_padding"/>
+
+    <TextView
+        android:id="@+id/txtFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtRating"
+        android:paddingRight="@dimen/text_status_right_padding"
+        android:paddingTop="@dimen/text_subtitle_top_padding"/>
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtGenre"
+        android:paddingTop="@dimen/text_title_top_padding"
+        android:paddingLeft="@dimen/text_title_left_padding"/>
+
+    <TextView
+        android:id="@+id/phoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:layout_below="@id/address"
+        android:paddingTop="@dimen/text_subtitle_top_padding"
+        android:paddingLeft="@dimen/text_title_left_padding"/>
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/black"
+        android:text="@string/error_message"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

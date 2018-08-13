@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DoorDashInterview</string>
+    <string name="error_message">\t Oops! Sorry, something went wrong!</string>
+
+    <string name="restaurantInfoFragment">restaurantInfoFragment</string>
+    <string name="rating">Rating: </string>
+    <string name="URL">URL</string>
+
+    <string name="now">Now</string>
+    <string name="deliveryFee">Delivery fee: </string>
+    <string name="phoneNo">Phone no: </string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/recycler_list_item_height">
+
+    <ImageView
+        android:id="@+id/imgRestVw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/img_top_padding"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgRestVw"
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_title_top_padding"
+         />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_toRightOf="@+id/imgRestVw"
+        android:textSize="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle_top_padding"/>
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/txtDescription"
+        android:textSize="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:paddingRight="@dimen/text_status_right_padding"
+        android:paddingTop="@dimen/text_status_top_padding"
+         />
+
+    <!--<TextView
+        android:id="@+id/txtDeliveryFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStatus"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_subtitle"
+        android:paddingRight="@dimen/text_status_right_padding"
+        android:paddingTop="@dimen/text_subtitle_top_padding"
+        />
+-->
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+</RelativeLayout>
